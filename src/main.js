@@ -40,6 +40,7 @@ class ElectronicWeChat {
     });
 
     app.on('activate', () => {
+      console.log('on.activate')
       if (this.wechatWindow == null) {
         this.createWeChatWindow();
       } else {
